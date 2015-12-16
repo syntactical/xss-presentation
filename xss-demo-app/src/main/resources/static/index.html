@@ -9,13 +9,9 @@
     </head>
     <body>
         <div class="container">
+            <div id="error-message" class="alert alert-danger" role="alert"></div>
             <nav class="navbar navbar-default">
-                <form class="navbar-form navbar-left" id="filter-form">
-                    <input type="text" class="form-control navbar-left", id="filter-text" placeholder="enter filter" />
-                </form>
-                <form id="delete-all-form" class="navbar-form navbar-left">
-                    <input type="button" class="form-control" id="delete-all-button" value="Delete All" />
-                </form>
+                <img src="http://www.gap.com/Asset_Archive/GPWeb/content/0009/803/803/assets/logo_152.gif">
                 <form class="navbar-form navbar-right" id="login-form">
                     <input type="text" class="form-control" id="username-text"  placeholder="username"/>
                     <input type="password" class="form-control" id="password-text" placeholder="password" />
@@ -23,17 +19,24 @@
                 </form>
             </nav>
             <header>
-                <h1>Guest Book</h1>
+                <h2>Customer reviews for Blue Polo Shirt</h2>
             </header>
-            <div id="error-message" class="alert alert-danger" role="alert"></div>
+            <div><img id="shirt-picture" src="../img/bluepolo.jpg"></div>
+            <nav class="navbar navbar-default">
+                <form class="navbar-form navbar-left" id="filter-form">
+                    <input type="text" class="form-control navbar-left" id="filter-text" placeholder="enter filter" />
+                </form>
+                <form id="delete-all-form" class="navbar-form navbar-left">
+                    <input type="button" class="form-control" id="delete-all-button" value="Delete All" />
+                </form>
+            </nav>
             <section>
                 <form action="#" method="POST" id="entry-form">
-                    <input id="entry-form-text" type="text" name="entryText" placeholder="Message text"/>
-                    <input type="submit" name="submit" id="entry-form-submit" value="Leave a message"/>
+                    <input id="entry-form-text" type="text" name="entryText" placeholder="Enter Review Here"/>
+                    <input type="submit" name="submit" id="entry-form-submit" value="Submit"/>
                 </form>
             </section>
             <section id="entries">
-
             </section>
         </div>
     </body>
